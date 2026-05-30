@@ -1,0 +1,28 @@
+{
+  "name": "my-restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "packageManager": "pnpm@11.4.0",
+  "main": "index.js",
+  "scripts": {
+    "dev:dashboard": "pnpm --filter dashboard web",
+    "dev:backend": "pnpm --filter backend dev",
+    "gen:contract": "pnpm --filter backend generate:openapi && pnpm --filter dashboard generate:api",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test",
+    "db:push": "pnpm --filter backend db:push",
+    "db:seed": "pnpm --filter backend db:seed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "eslint": "^10.4.0",
+    "prettier": "^3.8.3",
+    "turbo": "^2.9.15",
+    "typescript": "^6.0.3"
+  }
+}

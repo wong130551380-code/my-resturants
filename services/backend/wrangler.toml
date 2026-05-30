@@ -1,0 +1,7 @@
+name = "restaurant-dashboard-api"
+main = "src/index.ts"
+compatibility_date = "2026-05-29"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+DATABASE_URL = "postgres://user:password@localhost:5432/my_restaurant"
